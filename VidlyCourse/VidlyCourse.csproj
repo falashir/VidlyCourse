@@ -179,11 +179,36 @@
     <Compile Include="Migrations\202105031103117_InitialModel.Designer.cs">
       <DependentUpon>202105031103117_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105040942318_AddIsSubribeToCustomer.cs" />
+    <Compile Include="Migrations\202105040942318_AddIsSubribeToCustomer.Designer.cs">
+      <DependentUpon>202105040942318_AddIsSubribeToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105040954348_AddMembershipType.cs" />
+    <Compile Include="Migrations\202105040954348_AddMembershipType.Designer.cs">
+      <DependentUpon>202105040954348_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041005168_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\202105041005168_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>202105041005168_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041020275_ApplyAnnotaionToCustomerName.cs" />
+    <Compile Include="Migrations\202105041020275_ApplyAnnotaionToCustomerName.Designer.cs">
+      <DependentUpon>202105041020275_ApplyAnnotaionToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041240217_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\202105041240217_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>202105041240217_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041244035_PopulateNamesOfMembershipTypes.cs" />
+    <Compile Include="Migrations\202105041244035_PopulateNamesOfMembershipTypes.Designer.cs">
+      <DependentUpon>202105041244035_PopulateNamesOfMembershipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -270,6 +295,24 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202105031103117_InitialModel.resx">
       <DependentUpon>202105031103117_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105040942318_AddIsSubribeToCustomer.resx">
+      <DependentUpon>202105040942318_AddIsSubribeToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105040954348_AddMembershipType.resx">
+      <DependentUpon>202105040954348_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041005168_PopulateMembershipTypes.resx">
+      <DependentUpon>202105041005168_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041020275_ApplyAnnotaionToCustomerName.resx">
+      <DependentUpon>202105041020275_ApplyAnnotaionToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041240217_AddNameToMembershipType.resx">
+      <DependentUpon>202105041240217_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041244035_PopulateNamesOfMembershipTypes.resx">
+      <DependentUpon>202105041244035_PopulateNamesOfMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
