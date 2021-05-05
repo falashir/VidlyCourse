@@ -5,7 +5,7 @@
 </h2>
 @if (!Model.Any())
 {
-    <text> There is no one has rented this movie </text>
+    <text> There is no movie </text>
 }
 
 else
@@ -16,6 +16,7 @@ else
                 <th>
                     Movies
                 </th>
+                <th>Genre</th>
             </tr>
         </thead>
 
@@ -26,6 +27,9 @@ else
                 <tr>
                     <td>
                         @Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)
+                    </td>
+                    <td>
+                        @movie.Genre.Name
                     </td>
                 </tr>
             }

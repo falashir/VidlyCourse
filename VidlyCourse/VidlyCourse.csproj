@@ -203,9 +203,38 @@
     <Compile Include="Migrations\202105041244035_PopulateNamesOfMembershipTypes.Designer.cs">
       <DependentUpon>202105041244035_PopulateNamesOfMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105041259347_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\202105041259347_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>202105041259347_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041342309_MakeBirthdateSubscriptionOptionalInCustomer.cs" />
+    <Compile Include="Migrations\202105041342309_MakeBirthdateSubscriptionOptionalInCustomer.Designer.cs">
+      <DependentUpon>202105041342309_MakeBirthdateSubscriptionOptionalInCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041407531_AddingGenres.cs" />
+    <Compile Include="Migrations\202105041407531_AddingGenres.Designer.cs">
+      <DependentUpon>202105041407531_AddingGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041412304_PopulateGenres.cs" />
+    <Compile Include="Migrations\202105041412304_PopulateGenres.Designer.cs">
+      <DependentUpon>202105041412304_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041413104_AddingGenres1.cs" />
+    <Compile Include="Migrations\202105041413104_AddingGenres1.Designer.cs">
+      <DependentUpon>202105041413104_AddingGenres1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041418047_AddingGenresRightOne.cs" />
+    <Compile Include="Migrations\202105041418047_AddingGenresRightOne.Designer.cs">
+      <DependentUpon>202105041418047_AddingGenresRightOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105041427288_AddingDatesAndStockFeidlsToMovies.cs" />
+    <Compile Include="Migrations\202105041427288_AddingDatesAndStockFeidlsToMovies.Designer.cs">
+      <DependentUpon>202105041427288_AddingDatesAndStockFeidlsToMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -313,6 +342,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105041244035_PopulateNamesOfMembershipTypes.resx">
       <DependentUpon>202105041244035_PopulateNamesOfMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041259347_AddBirthdateToCustomer.resx">
+      <DependentUpon>202105041259347_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041342309_MakeBirthdateSubscriptionOptionalInCustomer.resx">
+      <DependentUpon>202105041342309_MakeBirthdateSubscriptionOptionalInCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041407531_AddingGenres.resx">
+      <DependentUpon>202105041407531_AddingGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041412304_PopulateGenres.resx">
+      <DependentUpon>202105041412304_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041413104_AddingGenres1.resx">
+      <DependentUpon>202105041413104_AddingGenres1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041418047_AddingGenresRightOne.resx">
+      <DependentUpon>202105041418047_AddingGenresRightOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105041427288_AddingDatesAndStockFeidlsToMovies.resx">
+      <DependentUpon>202105041427288_AddingDatesAndStockFeidlsToMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
