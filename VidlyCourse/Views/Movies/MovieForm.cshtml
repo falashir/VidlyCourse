@@ -4,7 +4,22 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Movie Form</h2>
+@{
+    var PageTitel = "";
+
+
+    if (Model.Movie == null)
+    {
+        PageTitel = "New Movie";
+    }
+    else
+    {
+        PageTitel = "Edit Movie";
+
+    }
+}
+
+<h2>@PageTitel</h2>
 
 @using (Html.BeginForm("Save", "Movies"))
 {
@@ -26,6 +41,6 @@
     </div>
 
     <button class="btn btn-primary">Save</button>
-    
+
     @Html.HiddenFor(m => m.Movie.Id)
 }
