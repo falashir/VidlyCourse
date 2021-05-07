@@ -235,6 +235,10 @@
     <Compile Include="Migrations\202105061233318_RemoveNullableIsSubscripeFromUser.Designer.cs">
       <DependentUpon>202105061233318_RemoveNullableIsSubscripeFromUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105072224456_MovieNameRequired.cs" />
+    <Compile Include="Migrations\202105072224456_MovieNameRequired.Designer.cs">
+      <DependentUpon>202105072224456_MovieNameRequired.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -251,6 +255,7 @@
     <Compile Include="ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-lumen.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -374,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105061233318_RemoveNullableIsSubscripeFromUser.resx">
       <DependentUpon>202105061233318_RemoveNullableIsSubscripeFromUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105072224456_MovieNameRequired.resx">
+      <DependentUpon>202105072224456_MovieNameRequired.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

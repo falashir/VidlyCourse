@@ -9,6 +9,8 @@ namespace VidlyCourse.Models
     public class Movie
     {
         public int Id { get; set; }
+        
+        [Required]
         public string Name { get; set; }
 
         [Display(Name = "Reales Date")]
@@ -17,6 +19,7 @@ namespace VidlyCourse.Models
         [Display(Name = "Adding Date")]
         public DateTime DateAdded { get; set; }
         
+        [Range(1, 20)]
         [Display(Name = "No. in the stock")]
         public int NumberInStock { get; set; }
 
