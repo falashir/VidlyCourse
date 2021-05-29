@@ -19,6 +19,9 @@ else
     <thead>
         <tr>
             <th>
+                ID
+            </th>
+            <th>
                 Customers
             </th>
             <th>
@@ -32,6 +35,9 @@ else
         @foreach (var customer in Model)
         {
             <tr>
+                <td>
+                    @customer.Id
+                </td>
                 <td>
                     @Html.ActionLink(customer.Name, "Edit", "Customers", new { id = customer.Id }, null)
                 </td>
