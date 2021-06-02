@@ -1,0 +1,49 @@
+﻿
+<h2>
+    Movies
+</h2>
+
+
+<table id="movies" class="table table-bordered table-hover" style="margin-top: 10px">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Movies</th>
+            <th>Genre</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+</table>
+
+
+
+@section scripts
+{
+    <script>
+        //render datatables - access data
+        $(document).ready(function () {
+            $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc: ""
+                },
+
+                columns: [
+                    {
+                        data: "id"
+                    },
+
+                    {
+                        data: "name"
+                    },
+
+                    {
+                        data: "genre.name"
+                    }
+                ]
+            });
+        });
+    </script>
+}

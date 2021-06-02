@@ -1,32 +1,24 @@
-﻿@model  IEnumerable<VidlyCourse.Models.Movie>
-
+﻿
 <h2>
     Movies
 </h2>
 
 @Html.ActionLink("New Movie", "New", "Movies", null, new { @class = "btn btn-primary" })
 
-@if (!Model.Any())
-{
-    <text> There is no movie </text>
-}
 
-else
-{
-    <table id="movies" class="table table-bordered table-hover" style="margin-top: 10px">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Movies</th>
-                <th>Genre</th>
-                <th>Delete</th>
-            </tr>
-        </thead>
+<table id="movies" class="table table-bordered table-hover" style="margin-top: 10px">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Movies</th>
+            <th>Genre</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
 
-        <tbody>
-        </tbody>
-    </table>
-}
+    <tbody>
+    </tbody>
+</table>
 
 
 
@@ -67,7 +59,7 @@ else
                 ]
             });
 
-        //delete handle
+            //delete handle
             $("#movies").on("click", ".js-delete", function () {
                 var button = $(this)
                 bootbox.confirm("Are you sure you want to delete this movie (" + button.attr("data-movie-name") + ")?", function (result) {

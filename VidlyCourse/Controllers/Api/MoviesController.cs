@@ -17,12 +17,14 @@ namespace VidlyCourse.Controllers.Api
         private ApplicationDbContext _context = new ApplicationDbContext();
 
         // GET: api/Movies
+        [Authorize(Roles = "CanManageMovies")]
         public IHttpActionResult GetMovies()
         {
             return Ok(_context.Movies.Include(m => m.Genre).ToList());
         }
 
         // GET: api/Movies/5
+        [Authorize(Roles = "CanManageMovies")]
         public IHttpActionResult GetMovie(int id)
         {
             var movie = _context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
@@ -36,6 +38,7 @@ namespace VidlyCourse.Controllers.Api
 
         // PUT: api/Movies/5
         [HttpPut]
+        [Authorize(Roles = "CanManageMovies")]
         public IHttpActionResult PutMovie(int id, Movie movie)
         {
             if (!ModelState.IsValid)
@@ -71,6 +74,7 @@ namespace VidlyCourse.Controllers.Api
 
         // POST: api/Movies
         [HttpPost]
+        [Authorize(Roles = "CanManageMovies")]
         public IHttpActionResult PostMovie(Movie movie)
         {
             if (!ModelState.IsValid)
@@ -86,6 +90,7 @@ namespace VidlyCourse.Controllers.Api
 
         // DELETE: api/Movies/5
         [HttpDelete]
+        [Authorize(Roles = "CanManageMovies")]
         public IHttpActionResult DeleteMovie(int id)
         {
             var movie = _context.Movies.Find(id);
